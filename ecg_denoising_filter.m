@@ -48,7 +48,7 @@ F = [0 Fpass Fstop Fs/2]/ (Fs/2); % normalized frequency bands
 A = [1 1 0 0]; % desired amplitude response
 W = [1 10]; % weight vector
 b = firpm (N,F,A,W); % filter coefficients
-% Alternatively, we can use the fdatool GUI to design and optimize the filter interactively
+% Moreover, we used the fdatool GUI to design and further optimize the filter interactively
 % fdatool
 
 % Plot the frequency response of the filter
