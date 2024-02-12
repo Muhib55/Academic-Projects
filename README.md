@@ -8,7 +8,7 @@ The main steps of the project are as follows:
 
 - Collected and preprocessed raw ECG data from the [PhysioNet MIT-BIH Arrhythmia Database](https://paperswithcode.com/dataset/physionet-challenge-2012), addressing artifacts and baseline wander.
 - Conducted a thorough analysis of the ECG signals to identify noise characteristics and defined denoising requirements.
-- Utilized MATLAB for designing a digital filter tailored to ECG denoising. According to the noise type, we used Finite
+- Utilized MATLAB for designing a digital filter tailored to ECG denoising. According to the noise type, used Finite
 Impulse Response (FIR) filter.
 - Employed the FDA Tool within MATLAB to refine filter specifications. Used the tool’s graphical interface to visualize the
 frequency response, adjust parameters, and optimize the filter for effective denoising.
@@ -36,12 +36,12 @@ To run the code and simulate the system, follow these steps:
 
 ## Experimentation
 
-To evaluate the performance of the filter, we conducted the following experiments:
+To evaluate the performance of the filter, I conducted the following experiments:
 
-- We measured the signal-to-noise ratio (SNR) of the raw and filtered ECG signals using the snr function in MATLAB
-- We calculated the root mean square error (RMSE) between the raw and filtered ECG signals using the immse function in MATLAB
-- We compared the frequency spectra of the raw and filtered ECG signals using the periodogram function in MATLAB
-- We varied the filter parameters (such as the order, the passband edge, and the stopband edge) and observed the effects on the filter response and the denoising quality
+- Measured the signal-to-noise ratio (SNR) of the raw and filtered ECG signals using the snr function in MATLAB
+- Calculated the root mean square error (RMSE) between the raw and filtered ECG signals using the immse function in MATLAB
+- Compared the frequency spectra of the raw and filtered ECG signals using the periodogram function in MATLAB
+- Varied the filter parameters (such as the order, the passband edge, and the stopband edge) and observed the effects on the filter response and the denoising quality
 
 The results of the experiments showed that the filter was able to effectively remove the high frequency noise from the ECG signal, while preserving the useful information in the low frequency range. The filter also had a linear phase, which ensured no distortion in the signal waveform. The filter parameters were optimized to achieve a balance between the passband ripple, the stopband attenuation, and the transition band width.
 
