@@ -25,7 +25,6 @@ You also need to have the following files in your working directory:
 
 - 100.dat: a PhysioNet file that contains the raw ECG data of a patient with ventricular ectopic beats
 - ecg_denoising_filter.m: a MATLAB script that contains the code for the filter design and application
-- 
 
 ## Instructions
 
